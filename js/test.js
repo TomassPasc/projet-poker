@@ -90,7 +90,7 @@ class Card {
 }
 
           ///////////////////////////////////////
-          
+
 //création des variables pour l'id des cartes
 var hero_card1 = document.getElementById('hero_card1')
 var hero_card2 = document.getElementById('hero_card2')
@@ -132,9 +132,6 @@ function test(){
   flop3.src = "assets/" + board[2] + ".png"
   turn.src = "assets/" + board[3] + ".png"
   river.src = "assets/" + board[4] + ".png"
-
-
-  
 
 }
 

@@ -2,61 +2,199 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>This is not poker</title>
 
-  </head>
+  <!-- </head>
 
-  <main>
-      <div id="play">
-
-          <!--hero-->
-        <div class="player">
-            <h2>hero</h2>
-            <img src="assets/back.png" alt="" id="hero_card1" /> 
-            <img src="assets/back.png" alt="" id="hero_card2"/> 
-
-        </div>
-
-        <!--jouer-->
-        <div class="jouer">
-            <button onclick="test()">Jouer</button>
-
-
-        </div>
-
-        <!--vilain-->
-        <div class="player">
-            <h2>vilain</h2>
-            <img src="assets/back.png" alt="" id="vilain_card1" /> 
-            <img src="assets/back.png" alt="" id="vilain_card2"/> 
-
-
-        </div>
-
+  <header class="header">
+    <div class="row">
+      <div class="col-6">
+        THIS IS NOT POKER
       </div>
-
-      <!-- board de 5 cartes -->
-      <div id="board">
-        <img src="assets/back.png" alt="" id="flop1" /> 
-        <img src="assets/back.png" alt="" id="flop2"/> 
-        <img src="assets/back.png" alt="" id="flop3"/> 
-        <img src="assets/back.png" alt="" id="turn"/> 
-        <img src="assets/back.png" alt="" id="river"/> 
-
+      <div class="col">
+        
       </div>
-
     
 
 
-    <!-- <script src="js/dealer.js"></script>
+  </header> -->
+
+  <main>
+
+
+                      <!-- navbar -->
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">THIS IS NOT POKER</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Jouez</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nos engagements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Partenaires</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+                        <!-- jouer -->
+
+      <div id="play">
+        
+          <!--hero-->
+      
+        
+          <div class="player">
+              <h2>hero</h2>
+              <img src="assets/back.png" alt="" id="hero_card1" class="card" /> 
+              <img src="assets/back.png" alt="" id="hero_card2" class="card"/> 
+          </div>
+
+          <!--jouer-->
+          <div class="jouer_boutton">
+              <button onclick="test()">Jouer</button>
+          </div>
+
+          <!--vilain-->
+          <div class="player">
+              <h2>vilain</h2>
+              <img src="assets/back.png" alt="" id="vilain_card1" class="card" /> 
+              <img src="assets/back.png" alt="" id="vilain_card2" class="card"/> 
+          </div>
+      
+      </div>
+      
+      <!-- board de 5 cartes -->
+
+      <div id="board">
+        <img src="assets/back.png" alt="" id="flop1" class="card"/> 
+        <img src="assets/back.png" alt="" id="flop2" class="card"/> 
+        <img src="assets/back.png" alt="" id="flop3" class="card"/> 
+        <img src="assets/back.png" alt="" id="turn" class="card"/> 
+        <img src="assets/back.png" alt="" id="river" class="card"/> 
+      </div>
+    
+
+                    <!-- Nos engagements -->
+
+      <div id="engagement">
+        <div class ="row">
+          <div class ="col-6">
+            <img src="assets/engagement.png" class="img-fluid" alt="Responsive image"/> 
+          </div>
+          <div class ="col-6">
+            <h2>Le jeu qui vous ressemble</h2>
+            <div class="row">
+              <div class ="col-4">
+                Fun
+              </div>
+              <div class ="col-4">
+                sécurisé
+              </div>
+              <div class ="col-4">
+                Expérience de jeu
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+                    <!-- Les partenaires -->
+      <div id="partenaires">
+        <div class="partenaire-titre">
+          <h2>Nos partenaires</h2>
+        </div>
+        <div class ="row">
+          <div class="col-4 partenaire-logo">
+            <img src="assets/partners/kawaii-game.png" class="img-partenaire"/>
+            Play Game
+          </div>
+          <div class="col-4 partenaire-logo">
+            <img src="assets/partners/chips-forum.png" class="img-partenaire"/>
+            Club Not Poker
+          </div>
+          <div class="col-4 partenaire-logo">
+            <img src="assets/partners/aces-magazine.png" class="img-partenaire"/>
+            Deuces Magazine
+          </div>
+
+        </div>
+      </div>
+
+
+                <!-- informations -->
+      <div id="info">
+        <div class ="row info-contain">
+          <div class="col-2 info-complémentaire">
+            <h3>TINP</h3>
+            <a href="#">Nous contacter</a>
+            <a href="#">Nous rejoindre</a>
+            <a href="#">FAQ</a>
+          </div>
+          <div class="col-2 info-complémentaire">
+            <h3>Le jeu</h3>
+            <a href="#">les règles</a>
+            <a href="#">Histoire</a>
+            
+          </div>
+          <div class="col-2 info-complémentaire">
+            <h3>Les bonus</h3>
+            <a href="#">Premier dépôt</a>
+            <a href="#">Early Adapter</a>
+            <a href="#">Parainage</a>
+            
+          </div>
+          <div class="col-2 info-complémentaire">
+            <h3>Nos partenaires</h3>
+            <a href="#">Plop Game</a>
+            <a href="#">Club Not Poker</a>
+            <a href="#">Deuces Magazine</a>
+            
+          </div>
+          <div class="col-4 info-logo">
+            <img src="assets/stripe.png" class="img-paiement"/> 
+            <img src="assets/visa.png" class="img-paiement"/> 
+
+            
+          </div>
+
+
+
+
+        </div>
+
+      </div>
+
+
+
+  </main>
+
+  <footer>
+
+
+  </footer>
+
+   <!-- <script src="js/dealer.js"></script>
     <script src="js/Deck.js"></script>
     <script src="js/Card.js"></script> -->
     <script src="js/test.js"></script>
 
 
-
-
-
-  </main>
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </html>

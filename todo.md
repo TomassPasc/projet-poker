@@ -1,12 +1,12 @@
-->initialiser le front
+->initialiser le front //ok
 
 ->retrourner une carte de manière statique // ok
 
-->ajouter un id à chaque carte
+->ajouter un id à chaque carte //ok
 
-->gérer les noms des cartes
+->gérer les noms des cartes //ok
 
-->ajouter les cartes de manière aléatoire
+->ajouter les cartes de manière aléatoire //ok
 
 ->gérer les combos de chaques joueurs
 

@@ -1,7 +1,21 @@
+* {
+    font-family: 'Fira Sans', sans-serif;
+}
 
+/* .header{
+    height:50px;
+    background: red;
+}
+.header .head{
+    padding: 10% 0;
+    color: grey;
+} */
+
+/* jouer */
 #play {
+    padding-top: 20px;
 	display: flex;
-	justify-content: space-around;
+    justify-content: space-around;
 }
 
 
@@ -9,4 +23,71 @@
     display: flex; 
     justify-content: center;
     padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.card {
+    border-radius: 10px;
+    border:1px solid black;
+    margin: 5px;
+    height:256px;
+    width:157px;
+    display: inline-flex;
+}
+
+/* engagement */
+#engagement {
+    padding-top: 20px;
+    background-color: rgb(224,224,224);
+    border-top: solid;
+    text-align: center;
+}
+
+/* partenaires */
+
+#partenaires{
+    border-top: solid;
+    padding-top: 15px;
+}
+
+.partenaire-titre{
+    text-align: center;
+}
+
+.partenaire-logo{
+    text-align: center;
+    
+}
+.img-partenaire{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* informations */
+#info{
+    border-top: solid;
+    background-color: rgb(224,224,224);
+    padding-top: 10px;
+}
+
+.info-contain{
+    margin-left: 5%;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+    display:block;
+}
+
+.img-paiement{
+    width: 40%;
+    height: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
