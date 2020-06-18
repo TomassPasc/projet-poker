@@ -22,14 +22,16 @@ function game(){
   scoreVilain = bestCombo(vilainHand.concat(board))
   gagnant = compareCombos(scoreHero,scoreVilain)
 
-  if (gagnant == scoreHero){
-    document.getElementById("message_hero").innerHTML = "Tu as gagné";
-    document.getElementById("message_vilain").innerHTML = "Tu as perdu";
-  }
-  else {
-    document.getElementById("message_hero").innerHTML = "Tu as perdu";
-    document.getElementById("message_vilain").innerHTML = "Tu as gagné";
-  }
+  afficherResultat(gagnant, scoreHero, scoreVilain)
+
+  // if (gagnant == scoreHero){
+  //   document.getElementById("message_hero").innerHTML = "Tu as gagné";
+  //   document.getElementById("message_vilain").innerHTML = "Tu as perdu";
+  // }
+  // else {
+  //   document.getElementById("message_hero").innerHTML = "Tu as perdu";
+  //   document.getElementById("message_vilain").innerHTML = "Tu as gagné";
+  // }
 
 }
 
