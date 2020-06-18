@@ -22,15 +22,13 @@ function game(){
   scoreVilain = bestCombo(vilainHand.concat(board))
   gagnant = compareCombos(scoreHero,scoreVilain)
 
-  //console.log(scoreHero)
-  //console.log(scoreVilain)
-  //console.log(gagnant)
-
   if (gagnant == scoreHero){
-    console.log("Hero a gagné")
+    document.getElementById("message_hero").innerHTML = "Tu as gagné";
+    document.getElementById("message_vilain").innerHTML = "Tu as perdu";
   }
   else {
-    console.log("vilain a gagné")
+    document.getElementById("message_hero").innerHTML = "Tu as perdu";
+    document.getElementById("message_vilain").innerHTML = "Tu as gagné";
   }
 
 }
