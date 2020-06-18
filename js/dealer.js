@@ -37,9 +37,9 @@
 function dealer() {
   let deck = new Deck()
   deck.shuffle()
-  console.log([deck.cards.slice(0, 5), deck.cards.slice(5, 10)])
 
-  return [deck.cards.slice(0, 5), deck.cards.slice(5, 10)]
+  //return [deck.cards.slice(0, 5), deck.cards.slice(5, 10)]
+  return deck.cards.slice(0,9)
 }
 
 

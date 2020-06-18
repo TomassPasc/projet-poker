@@ -1,4 +1,4 @@
-import Card from "../js/Card.js"
+//import Card from "../js/Card.js"
 
 class Deck {
   constructor() {
@@ -27,4 +27,4 @@ class Deck {
   }
 }
 
-export default Deck
+//export default Deck
